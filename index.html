@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css" integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l" crossorigin="anonymous" />
+    <!-- Font Awesome Icon Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!--link rel="icon" href="favicon.png"-->
+    <title>Mars wants to grok you</title>
+</head>
+<body>
+  <header>
+    <!-- NAV BAR -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <img src="images/logo.png" width="30" height="30" alt="Our logo">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mars.nasa.gov/resources/26696/debris-field-from-perseverance-landing-gear-seen-by-mars-helicopter/">Rover Tours of Spacecraft Debris Sites!</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mars.nasa.gov/gallery/atlas/olympus-mons.html">Climb Olympus Mons!</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://en.wikipedia.org/wiki/Grok">Grok or be grokked!</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="https://mars.nasa.gov/resources/26555/mars-report-dust-storms-on-mars/">Check the Dust Storm Forecast Before Embarking</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <!-- INITIAL IMAGE BANNER -->
+    <div id="welcomeBanner">
+      <h1 class="container mb-4">VISIT BEAUTIFUL MARS!<br/><span style="font-size:75%">Mars is "red"dy for you!</span></h1>
+      <img id="overlay" src="images/Domo-Kun-NHK-Transparent-Background.png" />
+    </div>
+  <h3 style="font-family:Verdana;padding-top:20px">Effect of background-size setting for the banner image</h3>
+  <div id="choices">
+    <form action="javascript:changeBackgroundSize()">
+      <input type="radio" name="bgSize" id="sizeInPixels" value="sizeInPixels" autofocus checked>
+      <label for="sizeInPixels">Set size in pixels (enter only width, or width and height)</label><br/>
+      <input type="radio" name="bgSize" id="sizeAsPercentage" value="percentage">
+      <label for="sizeAsPercentage">Set size as percentage (enter only width, or width and height)</label><br/>
+      <label for="w">&nbsp;&nbsp;&nbsp;&nbsp;Width:&nbsp;</label><input type="text" id="w" name="bgSize" size="4" maxLength="4" pattern="^\d{1,4}">
+      <label for="h">&nbsp;&nbsp;&nbsp;&nbsp;Height:&nbsp;</label><input type="text" id="h" name="bgSize" size="4" maxLength="4" pattern="^\d{0,4}">
+      <span style="margin-left:12px">Decimal digits only</span>
+      <br/>
+      <input type="radio" name="bgSize" id="autoSetting" value="auto">
+      <label for="autoSetting">auto</label><br/>
+      <input type="radio" name="bgSize" id="coverSetting" value="cover">
+      <label for="coverSetting">cover</label><br/>
+      <input type="radio" name="bgSize" id="containSetting" value="contain">
+      <label for="containSetting">contain</label><br/>
+      <button type="submit" class="btn btnSubmit"><i class="shoveit fa fa-gear"></i>Change It!</button>
+      <button type="reset" class="btn btnReset"><i class="shoveit fa fa-eraser"></i>Clear Form</button>
+    </form>
+    <p id="explanation">
+      
+    </p>
+  </div>
+  </main>
+  <!-- jQuery and Bootstrap Bundle (includes Popper) -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js"
+  integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-Piv4xVNRyMGpqkS2by6br4gNJ7DXjqk09RmUpJ8jgGtD7zP9yug3goQfGII0yAns" crossorigin="anonymous"></script>
+  <!-- JS -->
+  <script src="scripts/index.js"></script>
+</body>
+</html>
